@@ -41,3 +41,5 @@ function trackScore(frames) {
 }
 
 console.log(trackScore(frames3));
+
+module.exports = { trackScore }; 
