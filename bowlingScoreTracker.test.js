@@ -10,7 +10,7 @@ describe('Bowling Scores', () => {
         expect(result).toBe(30);
     });
 
-    it('Should return 30 as the score', () => {
+    it('Should return 16 as the score', () => {
         const result = trackScore([6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
         expect(result).toBe(16);
     });
