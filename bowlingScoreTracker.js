@@ -26,11 +26,9 @@ function trackScore(frames) {
 
     // strike case
     else if (score == 10 && frames[i + 1] == 0) {
-      for (let k = i + 2; k < frames.length; k++) {
-        if (frames[k] != 10) {
-          score += 10 + frames[k];
-          break;
-        }
+      if (frames[i + 2] != 10) score += (10 + frames[i + 2]);
+      else {
+        if (i < frames.length - 4) score += 10 + 10 + frames[i + 4];
       }
     }
   }
